@@ -28,15 +28,27 @@
             <label for="pescoco">Circunferência do Pescoço (cm):</label>
             <input type="number" id="pescoco" required>
 
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="1" max="120" required>
+
+
             <div id="extra-medidas" style="display: none;">
                 <label for="quadril">Circunferência do Quadril (cm) (somente mulheres):</label>
                 <input type="number" id="quadril">
             </div>
 
             <button type="submit">Calcular</button>
+
         </form>
-        <div id="resultado"></div>
-    </div>
+            <p id="resultado">Resultado :</p>
+            <div id="resultado-container">
+                <p id="resultado-texto"></p>
+                <div class="barra-container">
+                    <div id="barra-progresso"></div>
+                </div>
+            </div>            
+        </div>
+        
     
     <script src="scripts.js"></script>
 </body>
